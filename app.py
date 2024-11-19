@@ -15,7 +15,7 @@ st.set_page_config(
 # ---- LEER ARCHIVO CSV ----
 @st.cache_data
 def get_data_from_csv():
-    df = pd.read_csv(FULL_PATH)
+    df = pd.read_csv(FULL_PATH) 
     # Aplicar filtros iniciales para filtrar países específicos en 'production_countries'
     df["genres"] = df["genres"].astype(str)
     df_filtered = df[
